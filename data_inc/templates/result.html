@@ -1,0 +1,10 @@
+<div>
+  <ul style="list-style: none;">
+    {% for key, value in assignments.items() %}
+    <li>
+      <div>student id: {{ key }}</div>
+      <div>assignments: {{ value }}</div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

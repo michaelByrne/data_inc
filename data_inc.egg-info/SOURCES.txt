@@ -1,0 +1,9 @@
+MANIFEST.in
+data_inc/__init__.py
+data_inc/data_inc.py
+data_inc.egg-info/PKG-INFO
+data_inc.egg-info/SOURCES.txt
+data_inc.egg-info/dependency_links.txt
+data_inc.egg-info/requires.txt
+data_inc.egg-info/top_level.txt
+data_inc/templates/main.html

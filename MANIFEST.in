@@ -1,0 +1,2 @@
+graft data_inc/templates
+graft data_inc/static
