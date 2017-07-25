@@ -1,10 +1,30 @@
-<div>
+<style>
+  .assignment-list {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  li {
+    width: 50%;
+    background-color: lightblue;
+    padding: 5px;
+    padding-left: 10px;
+  }
+
+  h5 {
+    margin: 5px
+  }
+</style>
+{% if assignments %}
+<div class="assignment-list">
+  <h4>Video Watching Assignments</h4>
   <ul style="list-style: none;">
     {% for key, value in assignments.items() %}
     <li>
-      <div>student id: {{ key }}</div>
-      <div>assignments: {{ value }}</div>
+      <h5>Student id: {{ key }}</h5>
+      <p style="padding-left: 15px">watches videos by the following students: {{ value }}</p>
+      <hr>
     </li>
     {% endfor %}
   </ul>
 </div>
+{% else %} ERROR INVALID INPUT <a href="/">return</a>{% endif %}
